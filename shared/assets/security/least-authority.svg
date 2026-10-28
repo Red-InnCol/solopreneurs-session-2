@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#13232c" stroke-opacity=".055"/></pattern><linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f0a536" stop-opacity=".08"/><stop offset="1" stop-color="#f0a536" stop-opacity=".75"/></linearGradient><filter id="shadow"><feDropShadow dx="14" dy="17" stdDeviation="14" flood-color="#13232c" flood-opacity=".22"/></filter></defs>
+  <rect width="1600" height="900" fill="#f4f7f5"/><rect width="1600" height="900" fill="url(#grid)"/>
+  <g transform="translate(850 95)" filter="url(#shadow)">
+    <rect width="650" height="710" rx="46" fill="#13232c"/>
+    <g fill="#263b45" stroke="#53666f" stroke-width="5" opacity=".58"><rect x="55" y="55" width="150" height="140" rx="20"/><rect x="250" y="55" width="150" height="140" rx="20"/><rect x="445" y="55" width="150" height="140" rx="20"/><rect x="55" y="250" width="150" height="140" rx="20"/><rect x="445" y="250" width="150" height="140" rx="20"/><rect x="55" y="445" width="150" height="140" rx="20"/><rect x="250" y="445" width="150" height="140" rx="20"/><rect x="445" y="445" width="150" height="140" rx="20"/></g>
+    <path d="M265 0h120l115 570H150z" fill="url(#beam)"/>
+    <rect x="236" y="220" width="178" height="178" rx="28" fill="#fff" stroke="#f0a536" stroke-width="12"/>
+    <path d="M275 287h100v76H275zM275 287v-28h44l18 18h38v10" fill="#14b8c4" stroke="#13232c" stroke-width="7" stroke-linejoin="round"/>
+    <g transform="translate(492 500)"><rect x="0" y="45" width="90" height="75" rx="15" fill="#745de8"/><path d="M18 45V25c0-45 54-45 54 0v20" fill="none" stroke="#f4f7f5" stroke-width="13"/></g>
+    <path d="M325 398v130" stroke="#f0a536" stroke-width="10" stroke-linecap="round"/><circle cx="325" cy="558" r="30" fill="#f0a536"/>
+  </g>
+</svg>

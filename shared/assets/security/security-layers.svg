@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#13232c" stroke-opacity=".055"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="12" dy="16" stdDeviation="12" flood-color="#13232c" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f7f5"/><rect width="1600" height="900" fill="url(#grid)"/>
+  <g transform="translate(1090 450)" filter="url(#shadow)">
+    <circle r="340" fill="#14b8c4" fill-opacity=".08" stroke="#14b8c4" stroke-width="10" stroke-dasharray="28 18"/>
+    <circle r="275" fill="#745de8" fill-opacity=".07" stroke="#745de8" stroke-width="14" stroke-dasharray="8 18"/>
+    <circle r="205" fill="#f0a536" fill-opacity=".11" stroke="#f0a536" stroke-width="12"/>
+    <path d="M0-150 120-105v92c0 96-50 157-120 198-70-41-120-102-120-198v-92z" fill="#13232c"/>
+    <path d="M-58-43h116v102H-58z" fill="#f4f7f5" rx="12"/><path d="M-58-43v-35h48l22 20h46v15" fill="#14b8c4"/>
+    <g fill="#fff" stroke="#13232c" stroke-width="7">
+      <circle cx="-292" cy="-95" r="43"/><circle cx="264" cy="-145" r="43"/><circle cx="286" cy="105" r="43"/><circle cx="-248" cy="164" r="43"/>
+    </g>
+    <path d="m-312-95 15 16 27-31M242-145h44M264-167v44M263 105h46M286 82v46M-268 164h40" fill="none" stroke="#13232c" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>

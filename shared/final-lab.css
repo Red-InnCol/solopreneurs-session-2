@@ -1,0 +1,482 @@
+/* Isolated human-judgement and session-checklist candidates. */
+.theme-cinematic .redesigned[data-slide="29"],
+.theme-cinematic .redesigned[data-slide="30"],
+.theme-cinematic .redesigned[data-slide="31"],
+.theme-cinematic .redesigned[data-slide="32"] {
+  --ink: #30241f;
+  --cream: #f9f1e1;
+  --card: #fff8e9;
+  --brown: #704b37;
+  --rust: #a45232;
+  --gold: #f0a536;
+  --teal: #1d7365;
+  --title-font: Georgia, "Times New Roman", serif;
+  --body-font: Inter, Arial, Helvetica, sans-serif;
+  --code-font: Menlo, Consolas, monospace;
+}
+
+.theme-cinematic .redesigned:is(.layout-human-iteration,.layout-session-checklist) .slide-copy {
+  left: 5vw;
+  top: 7vh;
+  width: 90vw;
+}
+
+.theme-cinematic .redesigned:is(.layout-human-iteration,.layout-session-checklist) .slide-copy h1 {
+  margin-bottom: .5rem;
+  font-family: var(--title-font);
+  font-size: 98px;
+  line-height: .96;
+}
+
+.theme-cinematic .redesigned:is(.layout-human-iteration,.layout-session-checklist) .subtitle {
+  max-width: none;
+  font-family: var(--body-font);
+  font-size: 23px;
+}
+
+.theme-cinematic .redesigned:is(.layout-human-iteration,.layout-session-checklist) .visual-stage {
+  left: 5vw;
+  right: 5vw;
+  top: 28vh;
+  width: 90vw;
+  min-height: 59vh;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.human-iteration-layout {
+  display: grid;
+  grid-template-columns: 1.58fr .82fr;
+  gap: 1.5rem;
+  height: 55vh;
+}
+
+.iteration-contact-sheet {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 3px solid var(--brown);
+  border-radius: 24px;
+  background: var(--card);
+  box-shadow: 10px 11px 0 rgba(112,75,55,.13);
+}
+
+.iteration-contact-sheet > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iteration-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin: 0;
+  padding: .42rem .7rem .42rem .46rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--card);
+  font-family: var(--body-font);
+  font-size: 17px;
+  font-weight: 850;
+  box-shadow: 0 5px 16px rgba(48,36,31,.22);
+}
+
+.iteration-label b {
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.iteration-label.first { left: 1rem; top: 1rem; }
+.iteration-label.second { right: 1rem; top: 1rem; }
+.iteration-label.third { left: 1rem; bottom: 1rem; }
+.iteration-label.fourth { right: 1rem; bottom: 1rem; background: var(--teal); }
+
+.human-principles {
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  gap: 1rem;
+}
+
+.human-principles article {
+  display: grid;
+  align-content: center;
+  gap: .7rem;
+  padding: 1.35rem 1.5rem;
+  border: 3px solid var(--brown);
+  border-radius: 24px 8px 24px 8px;
+  box-shadow: 8px 9px 0 rgba(112,75,55,.12);
+}
+
+.human-principles article > b {
+  font-family: var(--body-font);
+  font-size: 35px;
+  letter-spacing: -.04em;
+}
+
+.human-principles article p {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.evaluation-principle { background: var(--gold); color: var(--ink); }
+.iteration-principle { background: var(--teal); color: var(--card); }
+
+.iteration-loop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .65rem;
+  padding: .65rem .8rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--card);
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.iteration-loop i { color: var(--gold); font-size: 21px; font-style: normal; }
+
+.session-checklist-sheet {
+  position: relative;
+  height: 55vh;
+  padding: 1.15rem 1.6rem 1.15rem 2rem;
+  border: 3px solid var(--brown);
+  border-radius: 10px 28px 28px 10px;
+  background: var(--card);
+  box-shadow: 12px 13px 0 rgba(112,75,55,.13);
+}
+
+.session-checklist-sheet::before {
+  content: "";
+  position: absolute;
+  left: 1.05rem;
+  top: 1.15rem;
+  bottom: 1.15rem;
+  width: 5px;
+  border-radius: 99px;
+  background: var(--rust);
+}
+
+.session-checklist-sheet ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 2rem;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .9rem;
+  list-style: none;
+}
+
+.session-checklist-sheet li {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  min-width: 0;
+  padding: .45rem 1rem;
+  border-bottom: 2px solid var(--brown);
+}
+
+.session-checklist-sheet li:nth-child(even) {
+  border-left: 2px solid var(--brown);
+  padding-left: 1.5rem;
+}
+
+.session-checklist-sheet li:nth-last-child(-n+2) { border-bottom: 0; }
+
+.session-checklist-sheet li:last-child {
+  grid-column: 1 / -1;
+  width: calc(50% - 1rem);
+  justify-self: center;
+  border-left: 0;
+  padding-left: 1rem;
+}
+
+.session-checklist-sheet li > i {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 3px solid var(--teal);
+  border-radius: 7px;
+  background: var(--cream);
+}
+
+.session-checklist-sheet li > div {
+  display: grid;
+  grid-template-columns: minmax(9rem, .72fr) 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.session-checklist-sheet b {
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 27px;
+  letter-spacing: -.035em;
+}
+
+.session-checklist-sheet span {
+  color: var(--brown);
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: 750;
+}
+
+/* Final Lab 1 build and review prompts. */
+.theme-cinematic .redesigned:is(.layout-webpage-prompt,.layout-review-prompt) .slide-copy {
+  left: 5vw;
+  top: 6vh;
+  width: 90vw;
+}
+
+.theme-cinematic .redesigned:is(.layout-webpage-prompt,.layout-review-prompt) .slide-copy h1 {
+  margin-bottom: .5rem;
+  font-family: var(--title-font);
+  font-size: 98px;
+  line-height: .96;
+}
+
+.theme-cinematic .redesigned:is(.layout-webpage-prompt,.layout-review-prompt) .subtitle {
+  max-width: none;
+  font-family: var(--body-font);
+  font-size: 23px;
+}
+
+.theme-cinematic .redesigned:is(.layout-webpage-prompt,.layout-review-prompt) .visual-stage {
+  left: 5vw;
+  right: 5vw;
+  top: 27vh;
+  width: 90vw;
+  min-height: 60vh;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.final-prompt-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 1.5rem;
+  height: 56vh;
+}
+
+.prompt-guide,
+.copy-prompt-card {
+  border: 3px solid var(--brown);
+  background: var(--card);
+  box-shadow: 9px 10px 0 rgba(112,75,55,.13);
+}
+
+.prompt-guide {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: 26px 8px 26px 8px;
+  color: var(--ink);
+  font-family: var(--body-font);
+}
+
+.lab-chip {
+  align-self: flex-start;
+  padding: .42rem .72rem;
+  border-radius: 999px;
+  background: var(--rust);
+  color: var(--card);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.prompt-guide > strong {
+  margin-top: .8rem;
+  font-size: 30px;
+  letter-spacing: -.04em;
+}
+
+.prompt-guide ul,
+.prompt-guide ol {
+  display: grid;
+  gap: .55rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-cycle ol {
+  counter-reset: review-step;
+}
+
+.prompt-guide li {
+  position: relative;
+  display: grid;
+  gap: .08rem;
+  padding: .66rem .75rem .66rem 2.4rem;
+  border-bottom: 2px solid var(--brown);
+}
+
+.prompt-guide li::before {
+  content: "";
+  position: absolute;
+  left: .15rem;
+  top: .72rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 3px solid var(--teal);
+  border-radius: 6px;
+  background: var(--cream);
+}
+
+.review-cycle li::before {
+  content: counter(review-step);
+  counter-increment: review-step;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.prompt-guide li b {
+  font-size: 21px;
+}
+
+.prompt-guide li span {
+  color: var(--brown);
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.build-prompt-layout .prompt-guide > strong {
+  margin-top: .55rem;
+  font-size: 27px;
+}
+
+.build-prompt-layout .prompt-guide ul {
+  gap: .1rem;
+  margin: .55rem 0;
+}
+
+.build-prompt-layout .prompt-guide li {
+  padding: .38rem .4rem .38rem 2.2rem;
+}
+
+.build-prompt-layout .prompt-guide li::before {
+  top: .48rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.build-prompt-layout .prompt-guide li b {
+  font-size: 18px;
+}
+
+.build-prompt-layout .prompt-guide li span {
+  font-size: 14px;
+}
+
+.prompt-guide em {
+  margin-top: auto;
+  padding: .55rem .75rem;
+  border-radius: 999px;
+  background: var(--teal);
+  color: var(--card);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 850;
+  text-align: center;
+}
+
+.copy-prompt-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px 26px 8px 26px;
+}
+
+.copy-prompt-card > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  padding: .65rem 1rem .65rem 1.25rem;
+  border-bottom: 3px solid var(--brown);
+  background: var(--ink);
+  color: var(--card);
+  font-family: var(--body-font);
+}
+
+.copy-prompt-card > header div {
+  display: grid;
+  gap: .1rem;
+}
+
+.copy-prompt-card > header b {
+  font-size: 20px;
+}
+
+.copy-prompt-card > header span {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.copy-prompt-card button {
+  min-width: 132px;
+  padding: .65rem .9rem;
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.copy-prompt-card button:hover,
+.copy-prompt-card button:focus-visible {
+  outline: 4px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.copy-prompt-card pre {
+  height: calc(56vh - 68px);
+  margin: 0;
+  padding: 1rem 1.2rem 1.4rem;
+  overflow: auto;
+  background: var(--card);
+  color: var(--ink);
+  white-space: pre-wrap;
+  scrollbar-color: var(--rust) var(--cream);
+}
+
+.copy-prompt-card code {
+  font-family: var(--code-font);
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.42;
+}
+
+.copy-prompt-card pre:focus-visible {
+  outline: 5px solid var(--gold);
+  outline-offset: -6px;
+}
